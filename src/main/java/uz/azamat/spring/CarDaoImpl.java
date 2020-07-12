@@ -32,13 +32,13 @@ public class CarDaoImpl implements CarDAO {
 
     @Override
     public void update(Car car) {
-        String query = "update cars set name = ?, color = ? where id =" + car.getId();
-        template.update(query, car.getName(), car.getColor());
+        String query = "update cars set name = ?, color = ? where id = ?";
+        template.update(query, car.getName(), car.getColor(), car.getId());
     }
 
     @Override
     public void delete(int id) {
         String query = "delete from cars where id = ?";
-        template.queryForObject(query, new Object[]{id}, new CarRowMapper());
+        template.update(query, id);
     }
 }

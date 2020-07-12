@@ -27,13 +27,13 @@ public class CarController {
         service.save(car);
     }
 
-    @RequestMapping(value = "/car", method = RequestMethod.DELETE)
-    public void deleteCarById(@RequestParam int id) {
-        service.delete(id);
-    }
-
     @RequestMapping(value = "/car", method = RequestMethod.PUT)
     public void upDateCars(@RequestBody Car car) {
         service.update(car);
+    }
+
+    @RequestMapping(value = "/car", method = RequestMethod.DELETE)
+    public void deleteCarById(@RequestParam int id) {
+        service.delete(id);
     }
 }
