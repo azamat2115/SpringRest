@@ -2,13 +2,16 @@ package uz.azamat.spring;
 
 public class Car {
     private int id;
-    private String carName;
-    private String carColor;
+    private String name;
+    private String color;
 
-    public Car(int id, String carName, String carColor) {
+    public Car(int id, String name, String color) {
         this.id = id;
-        this.carName = carName;
-        this.carColor = carColor;
+        this.name = name;
+        this.color = color;
+    }
+
+    public Car() {
     }
 
     public int getId() {
@@ -19,19 +22,19 @@ public class Car {
         this.id = id;
     }
 
-    public String getCarName() {
-        return carName;
+    public String getName() {
+        return name;
     }
 
-    public void setCarName(String carName) {
-        this.carName = carName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getCarColor() {
-        return carColor;
+    public String getColor() {
+        return color;
     }
 
-    public void setCarColor(String carColor) {
-        this.carColor = carColor;
+    public void setColor(String color) {
+        this.color = color;
     }
 }
