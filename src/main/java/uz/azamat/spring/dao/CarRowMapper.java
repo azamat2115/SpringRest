@@ -1,6 +1,7 @@
-package uz.azamat.spring;
+package uz.azamat.spring.dao;
 
 import org.springframework.jdbc.core.RowMapper;
+import uz.azamat.spring.model.Car;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;

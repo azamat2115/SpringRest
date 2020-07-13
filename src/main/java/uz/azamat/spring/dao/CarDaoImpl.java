@@ -1,7 +1,8 @@
-package uz.azamat.spring;
+package uz.azamat.spring.dao;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import uz.azamat.spring.model.Car;
 
 import java.util.List;
 

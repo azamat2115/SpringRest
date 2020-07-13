@@ -1,6 +1,8 @@
-package uz.azamat.spring;
+package uz.azamat.spring.controller;
 
 import org.springframework.web.bind.annotation.*;
+import uz.azamat.spring.service.CarService;
+import uz.azamat.spring.model.Car;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -21,7 +23,6 @@ public class CarController {
         return service.get(id);
     }
 
-    //
     @RequestMapping(value = "/cars", method = RequestMethod.POST)
     public void addNewCar(@RequestBody Car car) {
         service.save(car);

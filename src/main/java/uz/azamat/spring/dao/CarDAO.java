@@ -1,4 +1,6 @@
-package uz.azamat.spring;
+package uz.azamat.spring.dao;
+
+import uz.azamat.spring.model.Car;
 
 import java.util.List;
 
